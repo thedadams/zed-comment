@@ -1,0 +1,17 @@
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  homebrew:
+    name: Release Zed Extension
+    runs-on: ubuntu-latest
+    steps:
+      - uses: huacnlee/zed-extension-action@v1
+        with:
+          extension-name: zed-comment
+          push-to: thedadams/zed-extensions
+        env:
+          # the personal access token should have "repo" & "workflow" scopes
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}

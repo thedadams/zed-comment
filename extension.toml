@@ -1,0 +1,11 @@
+id = "zed-comment"
+name = "Zed Comment"
+version = "0.1.0"
+schema_version = 1
+authors = ["Donnie Adams <donnie@thedadams.com>"]
+description = "Comment language extension"
+repository = "https://github.com/thedadams/zed-comment"
+
+[grammars.comment]
+repository = "https://github.com/stsewd/tree-sitter-comment"
+rev = "689be73775bd2dd57b938b8e12bf50fec35a6ca3"
