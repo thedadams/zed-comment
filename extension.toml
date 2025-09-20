@@ -1,5 +1,5 @@
 id = "comment"
-name = "Zed Comment"
+name = "Comment Language"
 version = "0.1.0"
 schema_version = 1
 authors = ["Donnie Adams <donnie@thedadams.com>"]
