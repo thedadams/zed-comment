@@ -1,5 +1,5 @@
 id = "comment"
-name = "Comment Language"
+name = "Comment"
 version = "0.1.0"
 schema_version = 1
 authors = ["Donnie Adams <donnie@thedadams.com>"]
