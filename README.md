@@ -12,11 +12,11 @@ Ideally, the coloring would be supported by definitions like `comment.info` and 
 
 ## Installation
 
-Search "zed-comment" in extension page, and install it.
+Search "zed-comment" in extension page, and install it. See the Compatibility section for details on what is needed from _each_ language for proper highlighting.
 
 ## Compatibility
 
-This extension provides a new "language" called `comment`. In order for comments to be properly highlighted, this language must be injected into other languages. To do this, the following must be added to the `injections.scm` file:
+This extension provides a new "language" called `comment`. In order for comments to be properly highlighted, this language must be injected into other languages. To do this, a snippet must be added to the `injections.scm` file for each language where comment syntax support is desired. An example might be:
 ```scheme
 ((comment) @content
  (#set! injection.language "comment")
@@ -24,6 +24,21 @@ This extension provides a new "language" called `comment`. In order for comments
 ```
 
 See the [Dockerfile plugin](https://github.com/zed-extensions/dockerfile/blob/main/languages/dockerfile/injections.scm) as an example.
+
+Note also that in a single `injections.scm` file, only one of `@content` or `@injections.content` is allowed, never both. So, if the language's `injections.scm` file is already using `@injections.content`, then the snippet should be:
+```scheme
+((comment) @injections.content
+ (#set! injection.language "comment")
+)
+```
+
+See the [Rust](https://github.com/zed-industries/zed/blob/main/crates/languages/src/rust/injections.scm) support built into Zed.
+
+Finally, the `(comment)` part is also language-specific. In the Rust example linked above, the proper node name is `(line_comment)` instead.
+
+The bottom line is that adding this injection is straightforward as long as you use:
+- The `@content` or `@injections.content` snippet, depending on the language's `injections.scm` file.
+- The proper node name for the comment syntax in the language.
 
 ## Credits
 
