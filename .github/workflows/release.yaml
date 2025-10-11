@@ -11,6 +11,7 @@ jobs:
       - uses: huacnlee/zed-extension-action@v1
         with:
           extension-name: zed-comment
+          extension-path: extensions/comment
           push-to: thedadams/zed-extensions
         env:
           # the personal access token should have "repo" & "workflow" scopes
