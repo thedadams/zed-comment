@@ -7,6 +7,7 @@ An extension for the Zed text editor to highlight according to the corresponding
 - FIXME:, BUG:, ERROR: (`property`)
 - HACK:, WARNING:, WARN:, FIX: (`keyword`)
 - If the comment has a user in it (like `TODO(thedadams)`), then they user will be highlighted as `emphasis`.
+- If the comment has a URI (starting with `http://` or `https://`), then it will be highlighted as `link_uri`.
 
 Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes.
 
