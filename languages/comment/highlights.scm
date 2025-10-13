@@ -29,5 +29,3 @@
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter)
 (#any-of? @keyword "HACK" "WARNING" "WARN" "FIX"))
-
-(uri) @link_uri
