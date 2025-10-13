@@ -1,31 +1,31 @@
 ((tag
-  (name) @constant
+  (name) @_name @constant.comment.todo
   ("(" @punctuation.bracket
-    (user) @emphasis
+    (user) @emphasis.comment.user
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter)
-  (#any-of? @constant "TODO" "WIP"))
+  (#any-of? @_name "TODO" "WIP"))
 
 ((tag
-  (name) @emphasis
+  (name) @_name @string.comment.info
   ("(" @punctuation.bracket
-    (user) @emphasis
+    (user) @emphasis.comment.user
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter)
-(#any-of? @emphasis "NOTE" "XXX" "INFO" "DOCS" "PERF" "TEST"))
+(#any-of? @_name "NOTE" "XXX" "INFO" "DOCS" "PERF" "TEST"))
 
 ((tag
-  (name) @property
+  (name) @_name @property.comment.error
   ("(" @punctuation.bracket
-    (user) @emphasis
+    (user) @emphasis.comment.user
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter)
-(#any-of? @property "FIXME" "BUG" "ERROR"))
+(#any-of? @_name "FIXME" "BUG" "ERROR"))
 
 ((tag
-  (name) @keyword
+  (name) @_name @keyword.comment.warn
   ("(" @punctuation.bracket
-    (user) @emphasis
+    (user) @emphasis.comment.user
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter)
-(#any-of? @keyword "HACK" "WARNING" "WARN" "FIX"))
+(#any-of? @_name "HACK" "WARNING" "WARN" "FIX"))

@@ -3,12 +3,12 @@
 
 An extension for the Zed text editor to highlight according to the corresponding theme color comments beginning with:
 - TODO:, WIP: (`constant`)
-- NOTE:, XXX:, INFO:, DOCS:, PERF:, TEST: (`emphasis`)
-- FIXME:, BUG:, ERROR: (`property`)
-- HACK:, WARNING:, WARN:, FIX: (`keyword`)
-- If the comment has a user in it (like `TODO(thedadams)`), then they user will be highlighted as `emphasis`.
+- INFO:, NOTE:, XXX:, DOCS:, PERF:, TEST: (`string`)
+- ERROR:, FIXME:, BUG: (`property`)
+- WARN:, HACK:, WARNING:, FIX: (`keyword`)
+- If the comment has a user in it (like `TODO(thedadams):`), then they user will be highlighted as `emphasis`.
 
-Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes.
+Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes. However, it is possible to customize these colors using the [Theme Overrides](#theme-overrides) below.
 
 ## Installation
 
@@ -69,6 +69,57 @@ Navigate to the language's directory and locate or create an `injections.scm` fi
 
 > [!NOTE]
 > You may have to restart the language server or Zed to get the injections to work properly. Also, you are likely to need to redo the edits made here any time the extension is updated. Because of this, it is highly recommended to submit a PR to the extension with the edits you are making.
+
+### Theme Overrides
+
+Ideally, the colors for comments would be defined in themes by the `comment.todo`, `comment.info`, `comment.warn`, `comment.error`, and `comment.user` properties. However, these are not officially supported by Zed. Until they are, `constant`, `string`, `property`, `keyword`, and `emphasis` are used so that coloring works out of the box. There is really no rhyme or reason to these choices.
+
+This extension uses a small hack to allow users to customize the colors used in comments without affecting the rest of the syntax highlighting. Below is a complete example you can add to your Zed settings and modify to fit your needs. If your settings file already contains a `experimental.theme_overrides` object, you can simply add the `syntax` object to it.
+
+```json
+{
+  "experimental.theme_overrides": {
+    "syntax": {
+      "constant.comment.todo": {
+        "color": "#4078f2ff",
+        // "background_color": "#00000000",
+        // "font_weight": "bold",
+        // "font_style": "italic"
+      },
+      "string.comment.info": {
+        "color": "#50a14fff"
+        // "background_color": "#00000000",
+        // "font_weight": "bold",
+        // "font_style": "italic"
+      },
+      "keyword.comment.warn": {
+        "color": "#c18401ff"
+        // "background_color": "#00000000",
+        // "font_weight": "bold",
+        // "font_style": "italic"
+      },
+      "property.comment.error": {
+        "color": "#ca1243ff"
+        // "background_color": "#00000000",
+        // "font_weight": "bold",
+        // "font_style": "italic"
+      },
+      "emphasis.comment.user": {
+        "color": "#000000dd"
+        // "background_color": "#00000000",
+        // "font_weight": "bold",
+        // "font_style": "italic"
+      },
+    }
+  }
+}
+```
+
+To explain how and why this works, we'll use `constant.comment.todo` as an example.
+
+This extension defines the syntax color node as `constant.comment.todo`. Zed will look for a corresponding color in your theme or override for this name. If it finds one, it will use that color. If not, then it will use the color corresponding to `constant.comment`, if available. If that is not available, it will use the color corresponding to `constant`, which nearly every theme supports.
+
+Therefore, by defining coloring for `constant.comment.todo` in your overrides, you can change the color and style of just the `TODO` and `WIP` comments.
 
 ## Credits
 
