@@ -3,7 +3,8 @@
   ("(" @punctuation.bracket
     (user) @emphasis.comment.user
     ")" @punctuation.bracket)?
-  ":" @punctuation.delimiter)
+  ":" @punctuation.delimiter
+  (text)? @constant.comment.todo.text)
   (#any-of? @_name "TODO" "WIP"))
 
 ((tag
@@ -11,7 +12,8 @@
   ("(" @punctuation.bracket
     (user) @emphasis.comment.user
     ")" @punctuation.bracket)?
-  ":" @punctuation.delimiter)
+  ":" @punctuation.delimiter
+  (text)? @string.comment.info.text)
 (#any-of? @_name "NOTE" "XXX" "INFO" "DOCS" "PERF" "TEST"))
 
 ((tag
@@ -19,7 +21,8 @@
   ("(" @punctuation.bracket
     (user) @emphasis.comment.user
     ")" @punctuation.bracket)?
-  ":" @punctuation.delimiter)
+  ":" @punctuation.delimiter
+  (text)? @property.comment.error.text)
 (#any-of? @_name "FIXME" "BUG" "ERROR"))
 
 ((tag
@@ -27,5 +30,6 @@
   ("(" @punctuation.bracket
     (user) @emphasis.comment.user
     ")" @punctuation.bracket)?
-  ":" @punctuation.delimiter)
+  ":" @punctuation.delimiter
+  (text)? @keyword.comment.warn.text)
 (#any-of? @_name "HACK" "WARNING" "WARN" "FIX"))

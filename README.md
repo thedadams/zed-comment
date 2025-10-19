@@ -7,6 +7,7 @@ An extension for the Zed text editor to highlight according to the corresponding
 - ERROR:, FIXME:, BUG: (`property`)
 - WARN:, HACK:, WARNING:, FIX: (`keyword`)
 - If the comment has a user in it (like `TODO(thedadams):`), then they user will be highlighted as `emphasis`.
+- By default, anything after the `:` is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 
 Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes. However, it is possible to customize these colors using the [Theme Overrides](#theme-overrides) below.
 
@@ -109,7 +110,7 @@ This extension uses a small hack to allow users to customize the colors used in 
         // "background_color": "#00000000",
         // "font_weight": "bold",
         // "font_style": "italic"
-      },
+      }
     }
   }
 }
@@ -120,6 +121,23 @@ To explain how and why this works, we'll use `constant.comment.todo` as an examp
 This extension defines the syntax color node as `constant.comment.todo`. Zed will look for a corresponding color in your theme or override for this name. If it finds one, it will use that color. If not, then it will use the color corresponding to `constant.comment`, if available. If that is not available, it will use the color corresponding to `constant`, which nearly every theme supports.
 
 Therefore, by defining coloring for `constant.comment.todo` in your overrides, you can change the color and style of just the `TODO` and `WIP` comments.
+
+The text after the `:` can also be customized by adding a `.text` after the corresponding color node. For example, if you want to change the color or style of the text corresponding to an `ERROR:` comment:
+
+```json
+{
+  "experimental.theme_overrides": {
+    "syntax": {
+      "property.comment.error.text": {
+        "color": "#ff0000"
+        // "background_color": "#00000000",
+        // "font_weight": "bold",
+        // "font_style": "italic"
+      }
+    }
+  }
+}
+```
 
 ## Credits
 
