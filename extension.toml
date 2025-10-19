@@ -8,4 +8,4 @@ repository = "https://github.com/thedadams/zed-comment"
 
 [grammars.comment]
 repository = "https://github.com/thedadams/tree-sitter-comment"
-rev = "522407c1bbd02734e57da39a95e53326fcdd5723"
+rev = "remove-uri-support"
