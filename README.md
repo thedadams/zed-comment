@@ -71,7 +71,29 @@ Navigate to the language's directory and locate or create an `injections.scm` fi
 > [!NOTE]
 > You may have to restart the language server or Zed to get the injections to work properly. Also, you are likely to need to redo the edits made here any time the extension is updated. Because of this, it is highly recommended to submit a PR to the extension with the edits you are making.
 
-### Theme Overrides
+### Supported languages
+
+The table below lists each language’s comment injection status: ✅ supported; ⚠️ not yet supported (PR submitted).
+
+| Language      | Supported                                | Pull request                                         |
+| ------------- | ---------------------------------------- | ---------------------------------------------------- |
+| Rust          | ✅                                       | https://github.com/zed-industries/zed/pull/39714     |
+| Bash          | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| C             | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| C++           | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Git Commit    | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Go            | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Javascript    | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Python        | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| TSX           | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| TypeScript    | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| YAML          | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| HTML          | ⚠️                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Dockerfile    | ⚠️                                       | https://github.com/zed-extensions/dockerfile/pull/25 |
+| TOML          | ⚠️                                       | https://github.com/zed-extensions/toml/pull/2        |
+| Make          | ⚠️                                       | https://github.com/caius/zed-make/pull/27            |
+
+## Theme Overrides
 
 Ideally, the colors for comments would be defined in themes by the `comment.todo`, `comment.info`, `comment.warn`, `comment.error`, and `comment.user` properties. However, these are not officially supported by Zed. Until they are, `constant`, `string`, `property`, `keyword`, and `emphasis` are used so that coloring works out of the box. There is really no rhyme or reason to these choices.
 
