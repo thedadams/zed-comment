@@ -80,15 +80,19 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Rust          | ✅                                       | https://github.com/zed-industries/zed/pull/39714     |
 | Bash          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | C             | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
+| C#            | ✅                                       | Supported out of the box                             |
 | C++           | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Git Commit    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Go            | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
+| HTML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Java          | ✅                                       | Supported out of the box                             |
 | Javascript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Python        | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Scala         | ✅                                       | Supported out of the box                             |
 | TSX           | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | TypeScript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | YAML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| HTML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Zig           | ✅                                       | Supported out of the box                             |
 | Dockerfile    | ⚠️                                       | https://github.com/zed-extensions/dockerfile/pull/25 |
 | TOML          | ⚠️                                       | https://github.com/zed-extensions/toml/pull/2        |
 | Make          | ⚠️                                       | https://github.com/caius/zed-make/pull/27            |
