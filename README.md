@@ -109,46 +109,52 @@ The table below lists each language’s comment injection status: ✅ supported;
 
 Ideally, the colors for comments would be defined in themes by the `comment.todo`, `comment.info`, `comment.warn`, `comment.error`, and `comment.user` properties. However, these are not officially supported by Zed. Until they are, `constant`, `string`, `property`, `keyword`, and `emphasis` are used so that coloring works out of the box. There is really no rhyme or reason to these choices.
 
-This extension uses a small hack to allow users to customize the colors used in comments without affecting the rest of the syntax highlighting. Below is a complete example you can add to your Zed settings and modify to fit your needs. If your settings file already contains a `experimental.theme_overrides` object, you can simply add the `syntax` object to it.
+This extension uses a small hack to allow users to customize the colors used in comments without affecting the rest of the syntax highlighting. You can access your settings file via the command palette ("zed: Open Settings" - `cmd-,` on macOS, `ctrl-,` on Linux) and add a `theme_overrides` section.
+
+Below is a complete example you can add to your Zed settings and modify to fit your needs. If your settings file already contains a `theme_overrides` object, you can add these entries to the appropriate theme.
 
 ```json
 {
-  "experimental.theme_overrides": {
-    "syntax": {
-      "constant.comment.todo": {
-        "color": "#4078f2ff",
-        // "background_color": "#00000000",
-        // "font_weight": "bold",
-        // "font_style": "italic"
-      },
-      "string.comment.info": {
-        "color": "#50a14fff"
-        // "background_color": "#00000000",
-        // "font_weight": "bold",
-        // "font_style": "italic"
-      },
-      "keyword.comment.warn": {
-        "color": "#c18401ff"
-        // "background_color": "#00000000",
-        // "font_weight": "bold",
-        // "font_style": "italic"
-      },
-      "property.comment.error": {
-        "color": "#ca1243ff"
-        // "background_color": "#00000000",
-        // "font_weight": "bold",
-        // "font_style": "italic"
-      },
-      "emphasis.comment.user": {
-        "color": "#000000dd"
-        // "background_color": "#00000000",
-        // "font_weight": "bold",
-        // "font_style": "italic"
+  "theme_overrides": {
+    "YourThemeName": {
+      "syntax": {
+        "constant.comment.todo": {
+          "color": "#4078f2ff"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "string.comment.info": {
+          "color": "#50a14fff"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "keyword.comment.warn": {
+          "color": "#c18401ff"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "property.comment.error": {
+          "color": "#ca1243ff"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "emphasis.comment.user": {
+          "color": "#000000dd"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        }
       }
     }
   }
 }
 ```
+
+**Note:** Replace `YourThemeName` with the actual name of your active theme (e.g., "One Dark", "Ayu Light", etc.).
 
 To explain how and why this works, we'll use `constant.comment.todo` as an example.
 
@@ -160,13 +166,15 @@ The text after the `:` can also be customized by adding a `.text` after the corr
 
 ```json
 {
-  "experimental.theme_overrides": {
-    "syntax": {
-      "property.comment.error.text": {
-        "color": "#ff0000"
-        // "background_color": "#00000000",
-        // "font_weight": "bold",
-        // "font_style": "italic"
+  "theme_overrides": {
+    "YourThemeName": {
+      "syntax": {
+        "property.comment.error.text": {
+          "color": "#ff0000"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        }
       }
     }
   }
