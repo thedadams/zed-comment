@@ -15,6 +15,43 @@ Ideally, the coloring would be supported by definitions like `comment.info` and 
 
 Search "comment" in extension page, and install it. See the Compatibility section for details on what is needed from _each_ language for proper highlighting.
 
+## Multi-line Comments
+
+For languages that support multi-line comments, the extension will highlight consecutive lines with the same color. A line with no text in the comment will reset the parser.
+
+For example, the text in the following comment will all be highlighted as a `TODO` comment.
+
+```java
+/*
+ * TODO: This is a multi-line comment.
+ * It will be highlighted with the same color.
+ */
+```
+
+This comment has two blocks, the first will be highlighted as a `TODO` comment, and the second will be highlighted as a `INFO` comment.
+
+```java
+/*
+ * TODO: This is a multi-line comment.
+ * It will be highlighted with the same color.
+ * HACK: This is highlighted the same as above and not as a HACK
+ * because there is no empty line between the two blocks.
+ *
+ * INFO: This is another multi-line comment.
+ * It will be highlighted with the same color.
+ */
+```
+
+This applies to multi-comment lines only. So, for example, the following would be highlighted as two separate blocks.
+
+```java
+// TODO: This is a single-line comment and will be highlighted as a TODO.
+// HACK: This is a single-line comment and will be highlighted as a HACK.
+```
+
+This screenshot shows an illustration of this behavior:
+![Highlighting example](/static/HighlightingExample.png?raw=true)
+
 ## Compatibility
 
 This extension provides a new "language" called `comment`.
