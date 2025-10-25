@@ -13,7 +13,7 @@ Ideally, the coloring would be supported by definitions like `comment.info` and 
 
 ## Installation
 
-Search "zed-comment" in extension page, and install it. See the Compatibility section for details on what is needed from _each_ language for proper highlighting.
+Search "comment" in extension page, and install it. See the Compatibility section for details on what is needed from _each_ language for proper highlighting.
 
 ## Compatibility
 
