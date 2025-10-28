@@ -6,7 +6,7 @@ An extension for the Zed text editor to highlight according to the corresponding
 - INFO:, NOTE:, XXX:, DOCS:, PERF:, TEST: (`string`)
 - ERROR:, FIXME:, BUG: (`property`)
 - WARN:, HACK:, WARNING:, FIX: (`keyword`)
-- If the comment has a user in it (like `TODO(thedadams):`), then they user will be highlighted as `emphasis`.
+- If the comment has a user in it (like `TODO(thedadams):`), then the user will be highlighted as `emphasis`.
 - By default, anything after the `:` is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 
 Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes. However, it is possible to customize these colors using the [Theme Overrides](#theme-overrides) below.
@@ -28,7 +28,7 @@ For example, the text in the following comment will all be highlighted as a `TOD
  */
 ```
 
-This comment has two blocks, the first will be highlighted as a `TODO` comment, and the second will be highlighted as a `INFO` comment.
+This comment has two blocks, the first will be highlighted as a `TODO` comment, and the second will be highlighted as an `INFO` comment.
 
 ```java
 /*
