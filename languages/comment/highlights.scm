@@ -5,7 +5,7 @@
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter
   (text)? @constant.comment.todo.text)
-  (#match? @_name "^[/#*;+\\-_ \t]*(TODO|WIP)$"))
+  (#match? @_name "^[/#*;+\\-!| \t]*(TODO|WIP)$"))
 
 ((tag
   (name) @_name @string.comment.info
@@ -14,7 +14,7 @@
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter
   (text)? @string.comment.info.text)
-(#match? @_name "^[/#*;+\\-_ \t]*(NOTE|XXX|INFO|DOCS|PERF|TEST)$"))
+(#match? @_name "^[/#*;+\\-!| \t]*(NOTE|XXX|INFO|DOCS|PERF|TEST)$"))
 
 ((tag
   (name) @_name @property.comment.error
@@ -23,7 +23,7 @@
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter
   (text)? @property.comment.error.text)
-(#match? @_name "^[/#*;+\\-_ \t]*(FIXME|BUG|ERROR)$"))
+(#match? @_name "^[/#*;+\\-!| \t]*(FIXME|BUG|ERROR)$"))
 
 ((tag
   (name) @_name @keyword.comment.warn
@@ -32,4 +32,4 @@
     ")" @punctuation.bracket)?
   ":" @punctuation.delimiter
   (text)? @keyword.comment.warn.text)
-(#match? @_name "^[/#*;+\\-_ \t]*(HACK|WARNING|WARN|FIX)$"))
+(#match? @_name "^[/#*;+\\-!| \t]*(HACK|WARNING|WARN|FIX)$"))
