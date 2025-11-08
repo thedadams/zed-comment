@@ -119,9 +119,9 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Clojure       | ✅                                       | https://github.com/zed-extensions/clojure/pull/13    |
 | C#            | ✅                                       | N/A                                                  |
 | C++           | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| CSS           | ⚠️                                       | https://github.com/zed-industries/zed/pull/41710     |
+| CSS           | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Dart          | ✅                                       | https://github.com/zed-extensions/dart/pull/35       |
-| Diff          | ⚠️                                       | https://github.com/zed-industries/zed/pull/41710     |
+| Diff          | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Dockerfile    | ✅                                       | https://github.com/zed-extensions/dockerfile/pull/25 |
 | Git Commit    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Gleam         | ⚠️                                       | https://github.com/gleam-lang/zed-gleam/pull/20      |
@@ -130,7 +130,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | HTML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Java          | ✅                                       | N/A                                                  |
 | Javascript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| JSONC         | ⚠️                                       | https://github.com/zed-industries/zed/pull/41710     |
+| JSONC         | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Kotlin        | ✅                                       | https://github.com/zed-extensions/kotlin/pull/51     |
 | Make          | ⚠️                                       | https://github.com/caius/zed-make/pull/27            |
 | PHP           | ✅                                       | https://github.com/zed-extensions/php/pull/66        |
