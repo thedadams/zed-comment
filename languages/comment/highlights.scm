@@ -4,7 +4,7 @@
     (user) @constant.comment.todo.user
     ")" @constant.comment.todo.bracket)?
   (text)? @constant.comment.todo.text)
-  (#match? @_name "^[</#*;+\\-!| \t]*(TODO|WIP)$"))
+  (#match? @_name "^[</#*;+\\-!| \t]*(TODO|WIP|MAYBE)$"))
 
 ((tag
   (name) @_name @string.comment.info
