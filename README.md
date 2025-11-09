@@ -2,10 +2,10 @@
 [![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.zed.dev%2Fextensions%2Fcomment&query=%24.data%5B0%5D.download_count&label=download&cacheSeconds=60)](https://zed.dev/extensions?query=comment)
 
 An extension for the Zed text editor to highlight according to the corresponding theme color comments beginning with:
-- TODO:, WIP: (`constant`)
-- INFO:, NOTE:, XXX:, DOCS:, PERF:, TEST: (`string`)
-- ERROR:, FIXME:, BUG: (`property`)
-- WARN:, HACK:, WARNING:, FIX: (`keyword`)
+- TODO, WIP, MAYBE (`constant`)
+- INFO, NOTE, XXX, DOCS, PERF, TEST (`string`)
+- ERROR, FIXME, BUG (`property`)
+- WARN, HACK, WARNING, FIX (`keyword`)
 - By default, the user (in the case of something like `NOTE(thedadams):`) and anything after the name and/or user is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 
 Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes. However, it is possible to customize these colors using the [Theme Overrides](#theme-overrides) below.
