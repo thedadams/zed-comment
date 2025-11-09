@@ -123,6 +123,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Dart          | ✅                                       | https://github.com/zed-extensions/dart/pull/35       |
 | Diff          | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Dockerfile    | ✅                                       | https://github.com/zed-extensions/dockerfile/pull/25 |
+| Elixir        | ✅                                       | https://github.com/zed-extensions/elixir/pull/38     |
 | Git Commit    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Gleam         | ⚠️                                       | https://github.com/gleam-lang/zed-gleam/pull/20      |
 | Go            | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
