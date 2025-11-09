@@ -6,10 +6,13 @@ An extension for the Zed text editor to highlight according to the corresponding
 - INFO:, NOTE:, XXX:, DOCS:, PERF:, TEST: (`string`)
 - ERROR:, FIXME:, BUG: (`property`)
 - WARN:, HACK:, WARNING:, FIX: (`keyword`)
-- If the comment has a user in it (like `TODO(thedadams):`), then the user will be highlighted as `emphasis`.
-- By default, anything after the `:` is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
+- By default, the user (in the case of something like `NOTE(thedadams):`) and anything after the name and/or user is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 
 Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes. However, it is possible to customize these colors using the [Theme Overrides](#theme-overrides) below.
+
+## Breaking Changes
+
+Prior to version v0.4.0, for a comment like `HACK(thedadams)`, the parenthesis and user were styled the same regardless as the type of comment. As of v0.4.0, the parenthesis and user are styled the same as the type of comment, but can be customized using the [Theme Overrides](#theme-overrides). In particular, the user was styled using the `emphasis.comment.user` theme node. This is no longer the case.
 
 ## Installation
 
@@ -216,6 +219,31 @@ The text after the `:` can also be customized by adding a `.text` after the corr
       "syntax": {
         "property.comment.error.text": {
           "color": "#ff0000"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        }
+      }
+    }
+  }
+}
+```
+
+Similarly, the parenthesis and user corresponding to an `ERROR:` comment can be styled as follows:
+
+```json
+{
+  "theme_overrides": {
+    "YourThemeName": {
+      "syntax": {
+        "property.comment.error.bracket": {
+          "color": "#000000dd"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "property.comment.error.user": {
+          "color": "#000000dd"
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
