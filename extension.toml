@@ -3,7 +3,7 @@ name = "Comment"
 version = "0.4.0"
 schema_version = 1
 authors = ["Donnie Adams <donnie@thedadams.com>"]
-description = "Comment language extension"
+description = "Comment language extension for highlighting special comments"
 repository = "https://github.com/thedadams/zed-comment"
 
 [grammars.comment]
