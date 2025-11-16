@@ -155,7 +155,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 
 ## Theme Overrides
 
-Ideally, the colors for comments would be defined in themes by the `comment.todo`, `comment.info`, `comment.warn`, `comment.error`, and `comment.user` properties. However, these are not officially supported by Zed. Until they are, `constant`, `string`, `property`, `keyword`, and `emphasis` are used so that coloring works out of the box. There is really no rhyme or reason to these choices.
+Ideally, the colors for comments would be defined in themes by the `comment.todo`, `comment.info`, `comment.warn`, `comment.error`, and `comment.user` properties. However, these are not officially supported by Zed. Until they are, `constant`, `string`, `property`, and `keyword` are used so that coloring works out of the box. There is really no rhyme or reason to these choices.
 
 This extension uses a small hack to allow users to customize the colors used in comments without affecting the rest of the syntax highlighting. You can access your settings file via the command palette ("zed: Open Settings" - `cmd-,` on macOS, `ctrl-,` on Linux) and add a `theme_overrides` section.
 
@@ -186,12 +186,6 @@ Below is a complete example you can add to your Zed settings and modify to fit y
         },
         "property.comment.error": {
           "color": "#ca1243ff"
-          // "background_color": "#00000000",
-          // "font_weight": "bold",
-          // "font_style": "italic"
-        },
-        "emphasis.comment.user": {
-          "color": "#000000dd"
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
