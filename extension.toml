@@ -1,5 +1,5 @@
 id = "comment"
-name = "Comment"
+name = "Comments Highlighter"
 version = "0.4.0"
 schema_version = 1
 authors = ["Donnie Adams <donnie@thedadams.com>"]
@@ -8,4 +8,4 @@ repository = "https://github.com/thedadams/zed-comment"
 
 [grammars.comment]
 repository = "https://github.com/thedadams/tree-sitter-comment"
-rev = "5f87e8cdce4f9ff478535ef563b83e28c06c5e12"
+rev = "93b12e7b219d74fdbbb27e6671ca2f714738b253"
