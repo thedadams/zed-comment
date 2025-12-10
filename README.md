@@ -161,7 +161,7 @@ This extension uses a small hack to allow users to customize the colors used in 
 
 Below is a complete example you can add to your Zed settings and modify to fit your needs. If your settings file already contains a `theme_overrides` object, you can add these entries to the appropriate theme.
 
-```json
+```jsonc
 {
   "theme_overrides": {
     "YourThemeName": {
@@ -206,7 +206,7 @@ Therefore, by defining coloring for `constant.comment.todo` in your overrides, y
 
 The text after the `:` can also be customized by adding a `.text` after the corresponding color node. For example, if you want to change the color or style of the text corresponding to an `ERROR:` comment:
 
-```json
+```jsonc
 {
   "theme_overrides": {
     "YourThemeName": {
@@ -225,7 +225,7 @@ The text after the `:` can also be customized by adding a `.text` after the corr
 
 Similarly, the parenthesis and user corresponding to an `ERROR:` comment can be styled as follows:
 
-```json
+```jsonc
 {
   "theme_overrides": {
     "YourThemeName": {
