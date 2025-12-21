@@ -28,4 +28,4 @@
     (user) @keyword.comment.warn.user
     ")" @keyword.comment.warn.bracket)?
   (text)? @keyword.comment.warn.text)
-(#match? @_name "^[</#*;+\\-!| \t]*(HACK|WARNING|WARN|FIX)$"))
+(#match? @_name "^[</#*;+\\-!| \t]*(HACK|WARNING|WARN|FIX|SAFETY)$"))
