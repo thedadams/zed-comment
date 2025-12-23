@@ -5,7 +5,7 @@ An extension for the Zed text editor to highlight according to the corresponding
 - TODO, WIP, MAYBE (`constant`)
 - INFO, NOTE, XXX, DOCS, PERF, TEST (`string`)
 - ERROR, FIXME, BUG (`property`)
-- WARN, HACK, WARNING, FIX, UNSAFE (`keyword`)
+- WARN, HACK, WARNING, FIX, SAFETY (`keyword`)
 - By default, the user (in the case of something like `NOTE(thedadams):`) and anything after the name and/or user is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 
 Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes. However, it is possible to customize these colors using the [Theme Overrides](#theme-overrides) below.
