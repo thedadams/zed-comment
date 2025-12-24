@@ -4,7 +4,7 @@
 An extension for the Zed text editor to highlight according to the corresponding theme color comments beginning with:
 - TODO, WIP, MAYBE (`constant`)
 - INFO, NOTE, XXX, DOCS, PERF, TEST (`string`)
-- ERROR, FIXME, BUG (`property`)
+- ERROR, FIXME, BUG, DELETE (`property`)
 - WARN, HACK, WARNING, FIX, SAFETY (`keyword`)
 - By default, the user (in the case of something like `NOTE(thedadams):`) and anything after the name and/or user is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 

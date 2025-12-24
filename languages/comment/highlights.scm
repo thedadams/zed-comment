@@ -20,7 +20,7 @@
     (user) @property.comment.error.user
     ")" @property.comment.error.bracket)?
   (text)? @property.comment.error.text)
-(#match? @_name "^[</#*;+\\-!| \t]*(FIXME|BUG|ERROR)$"))
+(#match? @_name "^[</#*;+\\-!| \t]*(FIXME|BUG|ERROR|DELETE)$"))
 
 ((tag
   (name) @_name @keyword.comment.warn
