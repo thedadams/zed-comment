@@ -117,7 +117,6 @@ The table below lists each language’s comment injection status: ✅ supported;
 
 | Language      | Supported                                | Pull request                                         |
 | ------------- | ---------------------------------------- | ---------------------------------------------------- |
-| AsciiDoc      | ✅                                       | https://github.com/dunyakirkali/zed-asciidoc/pull/10 |
 | Bash          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | C             | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Clojure       | ✅                                       | https://github.com/zed-extensions/clojure/pull/13    |
