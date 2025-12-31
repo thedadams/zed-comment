@@ -7,6 +7,7 @@ An extension for the Zed text editor to highlight according to the corresponding
 - ERROR, FIXME, BUG, DELETE (`property`)
 - WARN, HACK, WARNING, FIX, SAFETY (`keyword`)
 - By default, the user (in the case of something like `NOTE(thedadams):`) and anything after the name and/or user is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
+- By default, the prefix (the `//` or the `#` that starts the comment) is styled the same as the type of comment as well, but can also be customized using the [Theme Overrides](#theme-overrides). Similarly for any `*` that starts a line in a multi-line comment.
 
 Ideally, the coloring would be supported by definitions like `comment.info` and `comment.warning`, but those aren't officially supported by Zed themes. However, it is possible to customize these colors using the [Theme Overrides](#theme-overrides) below.
 
@@ -224,13 +225,19 @@ The text after the `:` can also be customized by adding a `.text` after the corr
 }
 ```
 
-Similarly, the parenthesis and user corresponding to an `ERROR:` comment can be styled as follows:
+Similarly, the prefix (the `//`, `#` or `*` that starts a comment line), parenthesis, and user corresponding to an `ERROR:` comment can be styled as follows:
 
 ```jsonc
 {
   "theme_overrides": {
     "YourThemeName": {
       "syntax": {
+        "property.comment.error.prefix": {
+          "color": "#ff0000"
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
         "property.comment.error.bracket": {
           "color": "#000000dd"
           // "background_color": "#00000000",
