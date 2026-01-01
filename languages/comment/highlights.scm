@@ -8,7 +8,7 @@
     (prefix)? @constant.comment.todo.prefix
     (text)? @constant.comment.todo.text)
   )
-  (#match? @_name "^[</#*;+\\-!| \t]*(TODO|WIP|MAYBE)$"))
+  (#match? @_name "^(TODO|WIP|MAYBE)$"))
 
 ((tag
   (prefix)? @string.comment.info.prefix
@@ -20,7 +20,7 @@
     (prefix)? @string.comment.info.prefix
     (text)? @string.comment.info.text)
   )
-(#match? @_name "^[</#*;+\\-!| \t]*(NOTE|XXX|INFO|DOCS|PERF|TEST)$"))
+(#match? @_name "^(NOTE|XXX|INFO|DOCS|PERF|TEST)$"))
 
 ((tag
   (prefix)? @property.comment.error.prefix
@@ -32,7 +32,7 @@
     (prefix)? @property.comment.error.prefix
     (text)? @property.comment.error.text)
   )
-(#match? @_name "^[</#*;+\\-!| \t]*(FIXME|BUG|ERROR|DELETE)$"))
+(#match? @_name "^(FIXME|BUG|ERROR|DELETE)$"))
 
 ((tag
   (prefix)? @keyword.comment.warn.prefix
@@ -44,4 +44,4 @@
     (prefix)? @keyword.comment.warn.prefix
     (text)? @keyword.comment.warn.text)
   )
-(#match? @_name "^[</#*;+\\-!| \t]*(HACK|WARNING|WARN|FIX|SAFETY)$"))
+(#match? @_name "^(HACK|WARNING|WARN|FIX|SAFETY)$"))
