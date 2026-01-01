@@ -2,10 +2,10 @@
 [![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.zed.dev%2Fextensions%2Fcomment&query=%24.data%5B0%5D.download_count&label=download&cacheSeconds=60)](https://zed.dev/extensions?query=comment)
 
 An extension for the Zed text editor to highlight according to the corresponding theme color comments beginning with:
-- TODO, WIP, MAYBE (`constant`)
-- INFO, NOTE, XXX, DOCS, PERF, TEST (`string`)
-- ERROR, FIXME, BUG, DELETE (`property`)
-- WARN, HACK, WARNING, FIX, SAFETY (`keyword`)
+- TODO, WIP, MAYBE, ? (`constant`)
+- INFO, NOTE, XXX, DOCS, PERF, TEST, * (`string`)
+- ERROR, FIXME, BUG, DELETE, ! (`property`)
+- WARN, HACK, WARNING, FIX, SAFETY, # (`keyword`)
 - By default, the user (in the case of something like `NOTE(thedadams):`) and anything after the name and/or user is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 - By default, the prefix (the `//` or the `#` that starts the comment) is styled the same as the type of comment as well, but can also be customized using the [Theme Overrides](#theme-overrides). Similarly for any `*` that starts a line in a multi-line comment.
 
@@ -55,6 +55,9 @@ This applies to multi-comment lines only. So, for example, the following would b
 
 This screenshot shows an illustration of this behavior:
 ![Highlighting example](/static/HighlightingExample.png?raw=true)
+
+> [!NOTE]
+> In order to use `*` as a tag name in multi-line comments, you need to have have two `*` with a space between them; the first `*` is treated as a prefix and the second as a tag name.
 
 ## Compatibility
 
