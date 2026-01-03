@@ -138,7 +138,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Javascript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | JSONC         | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Kotlin        | ✅                                       | https://github.com/zed-extensions/kotlin/pull/51     |
-| Make          | ⚠️                                       | https://github.com/caius/zed-make/pull/27            |
+| Make          | ✅                                       | https://github.com/caius/zed-make/pull/27            |
 | PHP           | ✅                                       | https://github.com/zed-extensions/php/pull/66        |
 | Python        | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | RBS           | ✅                                       | https://github.com/zed-industries/zed/pull/15778     |
