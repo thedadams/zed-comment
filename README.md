@@ -105,10 +105,6 @@ Navigate to the language's directory and locate or create an `injections.scm` fi
 
 ---
 
-> [!TIP]
-> You can add support for the built-in languages that don't inject the "comment" language yet by [building Zed](https://github.com/zed-industries/zed/tree/main) yourself after patching every language you want in `zed/crates/languages/src`.
-> See the [Rust](https://github.com/zed-industries/zed/blob/main/crates/languages/src/rust/injections.scm) language support built into Zed as an example.
-
 > [!NOTE]
 > You may have to restart the language server or Zed to get the injections to work properly. Also, you are likely to need to redo the edits made here any time the extension is updated. Because of this, it is highly recommended to submit a PR to the extension with the edits you are making.
 
