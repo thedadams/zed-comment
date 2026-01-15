@@ -124,6 +124,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | C#            | ✅                                       | N/A                                                  |
 | C++           | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | CSS           | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
+| D             | ✅                                       | N/A                                                  |
 | Dart          | ✅                                       | https://github.com/zed-extensions/dart/pull/35       |
 | Diff          | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Dockerfile    | ✅                                       | https://github.com/zed-extensions/dockerfile/pull/25 |
