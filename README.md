@@ -80,7 +80,7 @@ If in the meantime you want to enable it for a specific language extension:
 Navigate to the language's directory and locate or create an `injections.scm` file. Add the language injection snippet below.
 
 > [!NOTE]
-> In a single `injections.scm` file, only one of `@content` or `@injections.content` is allowed, never both.
+> In a single `injections.scm` file, only one of `@content` or `@injection.content` is allowed, never both.
 > Check which variant the existing file uses (if any) and use the same one.
 
 #### Using `@content`:
@@ -90,10 +90,10 @@ Navigate to the language's directory and locate or create an `injections.scm` fi
   (#set! injection.language "comment"))
 ```
 
-#### Using `@injections.content`:
+#### Using `@injection.content`:
 
 ```scheme
-((comment) @injections.content
+((comment) @injection.content
   (#set! injection.language "comment"))
 ```
 
