@@ -147,7 +147,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Rust          | ✅                                       | https://github.com/zed-industries/zed/pull/39714     |
 | Scala         | ✅                                       | N/A                                                  |
 | Scheme        | ✅                                       | https://github.com/zed-extensions/scheme/pull/5      |
-| SQL           | ✅                                       | https://github.com/zed-extensions/sql/pull/38        |
+| SQL           | ⚠️                                       | https://github.com/zed-extensions/sql/pull/38        |
 | Svelte        | ✅                                       | https://github.com/zed-extensions/svelte/pull/52     |
 | Swift         | ✅                                       | https://github.com/zed-extensions/swift/pull/43      |
 | Terraform/HCL | ✅                                       | https://github.com/zed-extensions/terraform/pull/7   |
