@@ -142,6 +142,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Make          | ✅                                       | https://github.com/caius/zed-make/pull/27            |
 | PHP           | ✅                                       | https://github.com/zed-extensions/php/pull/66        |
 | Python        | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
+| R             | ✅                                       | N/A                                                  |
 | RBS           | ✅                                       | https://github.com/zed-industries/zed/pull/15778     |
 | Ruby          | ✅                                       | https://github.com/zed-extensions/ruby/pull/203      |
 | Rust          | ✅                                       | https://github.com/zed-industries/zed/pull/39714     |
