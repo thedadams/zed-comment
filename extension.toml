@@ -1,6 +1,6 @@
 id = "comment"
 name = "Comments Highlighter"
-version = "0.6.2"
+version = "0.6.3"
 schema_version = 1
 authors = ["Donnie Adams <donnie@thedadams.com>"]
 description = "Comment language extension for highlighting special comments"
