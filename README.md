@@ -129,6 +129,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Diff          | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Dockerfile    | ✅                                       | https://github.com/zed-extensions/dockerfile/pull/25 |
 | Elixir        | ✅                                       | https://github.com/zed-extensions/elixir/pull/38     |
+| Erlang        | ⚠️                                       | https://github.com/zed-extensions/erlang/pull/6      |
 | Git Commit    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Gleam         | ⚠️                                       | https://github.com/gleam-lang/zed-gleam/pull/20      |
 | Go            | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
@@ -138,6 +139,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Javascript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | JSONC         | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Kotlin        | ✅                                       | https://github.com/zed-extensions/kotlin/pull/51     |
+| LaTeX         | ✅                                       | N/A                                                  |
 | Lua           | ⚠️                                       | https://github.com/zed-extensions/lua/pull/37        |
 | Make          | ✅                                       | https://github.com/caius/zed-make/pull/27            |
 | Nix           | ⚠️                                       | https://github.com/zed-extensions/nix/pull/42        |
