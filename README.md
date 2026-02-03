@@ -129,7 +129,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Diff          | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Dockerfile    | ✅                                       | https://github.com/zed-extensions/dockerfile/pull/25 |
 | Elixir        | ✅                                       | https://github.com/zed-extensions/elixir/pull/38     |
-| Erlang        | ⚠️                                       | https://github.com/zed-extensions/erlang/pull/6      |
+| Erlang        | ✅                                       | https://github.com/zed-extensions/erlang/pull/6      |
 | Git Commit    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Gleam         | ⚠️                                       | https://github.com/gleam-lang/zed-gleam/pull/20      |
 | Go            | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
@@ -140,9 +140,9 @@ The table below lists each language’s comment injection status: ✅ supported;
 | JSONC         | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
 | Kotlin        | ✅                                       | https://github.com/zed-extensions/kotlin/pull/51     |
 | LaTeX         | ✅                                       | N/A                                                  |
-| Lua           | ⚠️                                       | https://github.com/zed-extensions/lua/pull/37        |
+| Lua           | ✅                                       | https://github.com/zed-extensions/lua/pull/37        |
 | Make          | ✅                                       | https://github.com/caius/zed-make/pull/27            |
-| Nix           | ⚠️                                       | https://github.com/zed-extensions/nix/pull/42        |
+| Nix           | ✅                                       | https://github.com/zed-extensions/nix/pull/42        |
 | PHP           | ✅                                       | https://github.com/zed-extensions/php/pull/66        |
 | Python        | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | R             | ✅                                       | N/A                                                  |
@@ -151,7 +151,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Rust          | ✅                                       | https://github.com/zed-industries/zed/pull/39714     |
 | Scala         | ✅                                       | N/A                                                  |
 | Scheme        | ✅                                       | https://github.com/zed-extensions/scheme/pull/5      |
-| SQL           | ⚠️                                       | https://github.com/zed-extensions/sql/pull/38        |
+| SQL           | ✅                                       | https://github.com/zed-extensions/sql/pull/38        |
 | Svelte        | ✅                                       | https://github.com/zed-extensions/svelte/pull/52     |
 | Swift         | ✅                                       | https://github.com/zed-extensions/swift/pull/43      |
 | Terraform/HCL | ✅                                       | https://github.com/zed-extensions/terraform/pull/7   |
