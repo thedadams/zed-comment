@@ -158,6 +158,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | TOML          | ✅                                       | https://github.com/zed-extensions/toml/pull/2        |
 | TSX           | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | TypeScript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
+| Typst         | ✅                                       | https://github.com/zed-extensions/typst/pull/54      |
 | YAML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Zig           | ✅                                       | N/A                                                  |
 
