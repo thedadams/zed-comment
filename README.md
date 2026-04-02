@@ -59,6 +59,31 @@ This screenshot shows an illustration of this behavior:
 > [!NOTE]
 > In order to use `*` as a tag name in multi-line comments, you need to have have two `*` with a space between them; the first `*` is treated as a prefix and the second as a tag name.
 
+## Semantic Tokens
+
+Zed's `semantic_tokens` setting controls how semantic tokens are applied. By default, this is set to `off`, and the extension works using Tree-sitter highlighting.
+
+Please note the following behaviors:
+- **`off` (default)**: Works as expected.
+- **`full`**: Zed uses *only* semantic tokens. Since Tree-sitter highlighting is disabled in this mode, this extension's highlighting will not be applied.
+- **`combined`**: Zed uses both. If your Language Server (LSP) provides semantic tokens for comments (e.g., `gopls`), they will typically override the Tree-sitter highlighting provided by this extension.
+
+If you are using `combined` mode and find that comment tags are no longer highlighted, you can add an empty rule for the `comment` token type in your `settings.json` to prevent the LSP from overriding the Tree-sitter styles:
+
+```jsonc
+{
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_type": "comment"
+      }
+    ]
+  }
+}
+```
+
+As explained in the [Zed documentation](https://zed.dev/docs/semantic-tokens#example-disabling-a-token-type), this configuration disables semantic styling for comments, allowing the Tree-sitter highlighting from this extension to work as intended.
+
 ## Compatibility
 
 This extension provides a new "language" called `comment`.
