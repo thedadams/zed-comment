@@ -168,7 +168,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | LaTeX         | ✅                                       | N/A                                                  |
 | Lua           | ✅                                       | https://github.com/zed-extensions/lua/pull/37        |
 | Make          | ✅                                       | https://github.com/caius/zed-make/pull/27            |
-| Nim           | ⚠️                                       | https://github.com/foxoman/zed-nim/pull/33           |
+| Nim           | ✅                                       | https://github.com/foxoman/zed-nim/pull/33           |
 | Nix           | ✅                                       | https://github.com/zed-extensions/nix/pull/42        |
 | OpenTofu/HCL  | ✅                                       | N/A                                                  |
 | PHP           | ✅                                       | https://github.com/zed-extensions/php/pull/66        |
