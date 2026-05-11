@@ -160,6 +160,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Gleam         | ✅                                       | https://github.com/gleam-lang/zed-gleam/pull/20      |
 | Go            | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Haskell       | ✅                                       | https://github.com/zed-extensions/haskell/pull/7     |
+| Hexa          | ⚠️                                       | https://github.com/hexalang/hexa-zed-bundle/pull/1   |
 | HTML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Java          | ✅                                       | N/A                                                  |
 | Javascript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
