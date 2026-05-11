@@ -161,6 +161,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Go            | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Haskell       | ✅                                       | https://github.com/zed-extensions/haskell/pull/7     |
 | Hexa          | ⚠️                                       | https://github.com/hexalang/hexa-zed-bundle/pull/1   |
+| Haxe          | ⚠️                                       | https://github.com/Frixuu/Zed-Haxe/pull/14           |
 | HTML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
 | Java          | ✅                                       | N/A                                                  |
 | Javascript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
