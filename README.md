@@ -5,7 +5,7 @@ An extension for the Zed text editor to highlight according to the corresponding
 - TODO, WIP, MAYBE, ? (`constant`)
 - INFO, NOTE, XXX, DOCS, PERF, TEST, * (`string`)
 - ERROR, FIXME, BUG, DELETE, ! (`property`)
-- WARN, HACK, WARNING, FIX, SAFETY, # (`keyword`)
+- HACK, WARNING, WARN, FIX, SAFETY, IMPORTANT, # (`keyword`)
 - By default, the user (in the case of something like `NOTE(thedadams):`) and anything after the name and/or user is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 - By default, the prefix (the `//` or the `#` that starts the comment) is styled the same as the type of comment as well, but can also be customized using the [Theme Overrides](#theme-overrides). Similarly for any `*` that starts a line in a multi-line comment.
 
