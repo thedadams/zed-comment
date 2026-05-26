@@ -44,4 +44,4 @@
     (prefix)? @keyword.comment.warn.prefix
     (text)? @keyword.comment.warn.text)*
   )
-(#match? @keyword.comment.warn "^(HACK|WARNING|WARN|FIX|SAFETY|#)$"))
+(#match? @keyword.comment.warn "^(HACK|WARNING|WARN|FIX|SAFETY|IMPORTANT|#)$"))
