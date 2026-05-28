@@ -32,7 +32,7 @@
     (prefix)? @property.comment.error.prefix
     (text)? @property.comment.error.text)*
   )
-(#match? @property.comment.error "^(FIXME|BUG|ERROR|DELETE|!)$"))
+(#match? @property.comment.error "^(FIXME|FIX|BUG|ERROR|DELETE|!)$"))
 
 ((tag
   (prefix)? @keyword.comment.warn.prefix
@@ -44,4 +44,4 @@
     (prefix)? @keyword.comment.warn.prefix
     (text)? @keyword.comment.warn.text)*
   )
-(#match? @keyword.comment.warn "^(HACK|WARNING|WARN|FIX|SAFETY|IMPORTANT|#)$"))
+(#match? @keyword.comment.warn "^(HACK|WARNING|WARN|SAFETY|IMPORTANT|#)$"))
