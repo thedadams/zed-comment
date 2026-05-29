@@ -1,11 +1,13 @@
 # zed-comment
+
 [![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.zed.dev%2Fextensions%2Fcomment&query=%24.data%5B0%5D.download_count&label=download&cacheSeconds=60)](https://zed.dev/extensions?query=comment)
 
 An extension for the Zed text editor to highlight according to the corresponding theme color comments beginning with:
+
 - TODO, WIP, MAYBE, ? (`constant`)
-- INFO, NOTE, XXX, DOCS, PERF, TEST, * (`string`)
-- ERROR, FIXME, BUG, DELETE, ! (`property`)
-- HACK, WARNING, WARN, FIX, SAFETY, IMPORTANT, # (`keyword`)
+- INFO, NOTE, XXX, DOCS, PERF, TEST, \* (`string`)
+- ERROR, FIXME, FIX, BUG, DELETE, ! (`property`)
+- HACK, WARNING, WARN, SAFETY, IMPORTANT, # (`keyword`)
 - By default, the user (in the case of something like `NOTE(thedadams):`) and anything after the name and/or user is highlighted the same as the name (`TODO`, `INFO`, `ERROR`, etc). See [Theme Overrides](#theme-overrides) for customization.
 - By default, the prefix (the `//` or the `#` that starts the comment) is styled the same as the type of comment as well, but can also be customized using the [Theme Overrides](#theme-overrides). Similarly for any `*` that starts a line in a multi-line comment.
 
@@ -64,8 +66,9 @@ This screenshot shows an illustration of this behavior:
 Zed's `semantic_tokens` setting controls how semantic tokens are applied. By default, this is set to `off`, and the extension works using Tree-sitter highlighting.
 
 Please note the following behaviors:
+
 - **`off` (default)**: Works as expected.
-- **`full`**: Zed uses *only* semantic tokens. Since Tree-sitter highlighting is disabled in this mode, this extension's highlighting will not be applied.
+- **`full`**: Zed uses _only_ semantic tokens. Since Tree-sitter highlighting is disabled in this mode, this extension's highlighting will not be applied.
 - **`combined`**: Zed uses both. If your Language Server (LSP) provides semantic tokens for comments (e.g., `gopls`), they will typically override the Tree-sitter highlighting provided by this extension.
 
 If you are using `combined` mode and find that comment tags are no longer highlighted, you can add an empty rule for the `comment` token type in your `settings.json` to prevent the LSP from overriding the Tree-sitter styles:
@@ -75,10 +78,10 @@ If you are using `combined` mode and find that comment tags are no longer highli
   "global_lsp_settings": {
     "semantic_token_rules": [
       {
-        "token_type": "comment"
-      }
-    ]
-  }
+        "token_type": "comment",
+      },
+    ],
+  },
 }
 ```
 
@@ -140,57 +143,57 @@ Navigate to the language's directory and locate or create an `injections.scm` fi
 
 The table below lists each language’s comment injection status: ✅ supported; ⚠️ not yet supported (PR submitted).
 
-| Language      | Supported                                | Pull request                                         |
-| ------------- | ---------------------------------------- | ---------------------------------------------------- |
-| AsciiDoc      | ✅                                       | https://github.com/dunyakirkali/zed-asciidoc/pull/10 |
-| Astro         | ✅                                       | https://github.com/zed-extensions/astro/pull/41      |
-| Bash          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| C             | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| Clojure       | ✅                                       | https://github.com/zed-extensions/clojure/pull/13    |
-| C#            | ✅                                       | N/A                                                  |
-| C++           | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| CSS           | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
-| D             | ✅                                       | N/A                                                  |
-| Dart          | ✅                                       | https://github.com/zed-extensions/dart/pull/35       |
-| Diff          | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
-| Dockerfile    | ✅                                       | https://github.com/zed-extensions/dockerfile/pull/25 |
-| Elixir        | ✅                                       | https://github.com/zed-extensions/elixir/pull/38     |
-| Erlang        | ✅                                       | https://github.com/zed-extensions/erlang/pull/6      |
-| Git Commit    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| Gleam         | ✅                                       | https://github.com/gleam-lang/zed-gleam/pull/20      |
-| Go            | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| Haskell       | ✅                                       | https://github.com/zed-extensions/haskell/pull/7     |
-| Hexa          | ⚠️                                       | https://github.com/hexalang/hexa-zed-bundle/pull/1   |
-| Haxe          | ⚠️                                       | https://github.com/Frixuu/Zed-Haxe/pull/14           |
-| HTML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| Java          | ✅                                       | N/A                                                  |
-| Javascript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| JSONC         | ✅                                       | https://github.com/zed-industries/zed/pull/41710     |
-| Kotlin        | ✅                                       | https://github.com/zed-extensions/kotlin/pull/51     |
-| LaTeX         | ✅                                       | N/A                                                  |
-| Lua           | ✅                                       | https://github.com/zed-extensions/lua/pull/37        |
-| Make          | ✅                                       | https://github.com/caius/zed-make/pull/27            |
-| Nim           | ✅                                       | https://github.com/foxoman/zed-nim/pull/33           |
-| Nix           | ✅                                       | https://github.com/zed-extensions/nix/pull/42        |
-| OpenTofu/HCL  | ✅                                       | N/A                                                  |
-| PHP           | ✅                                       | https://github.com/zed-extensions/php/pull/66        |
-| Python        | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| R             | ✅                                       | N/A                                                  |
-| RBS           | ✅                                       | https://github.com/zed-industries/zed/pull/15778     |
-| Ruby          | ✅                                       | https://github.com/zed-extensions/ruby/pull/203      |
-| Rust          | ✅                                       | https://github.com/zed-industries/zed/pull/39714     |
-| Scala         | ✅                                       | N/A                                                  |
-| Scheme        | ✅                                       | https://github.com/zed-extensions/scheme/pull/5      |
-| SQL           | ✅                                       | https://github.com/zed-extensions/sql/pull/38        |
-| Svelte        | ✅                                       | https://github.com/zed-extensions/svelte/pull/52     |
-| Swift         | ✅                                       | https://github.com/zed-extensions/swift/pull/43      |
-| Terraform/HCL | ✅                                       | https://github.com/zed-extensions/terraform/pull/7   |
-| TOML          | ✅                                       | https://github.com/zed-extensions/toml/pull/2        |
-| TSX           | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| TypeScript    | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| Typst         | ✅                                       | https://github.com/zed-extensions/typst/pull/54      |
-| YAML          | ✅                                       | https://github.com/zed-industries/zed/pull/39884     |
-| Zig           | ✅                                       | N/A                                                  |
+| Language      | Supported | Pull request                                         |
+| ------------- | --------- | ---------------------------------------------------- |
+| AsciiDoc      | ✅        | https://github.com/dunyakirkali/zed-asciidoc/pull/10 |
+| Astro         | ✅        | https://github.com/zed-extensions/astro/pull/41      |
+| Bash          | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| C             | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| Clojure       | ✅        | https://github.com/zed-extensions/clojure/pull/13    |
+| C#            | ✅        | N/A                                                  |
+| C++           | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| CSS           | ✅        | https://github.com/zed-industries/zed/pull/41710     |
+| D             | ✅        | N/A                                                  |
+| Dart          | ✅        | https://github.com/zed-extensions/dart/pull/35       |
+| Diff          | ✅        | https://github.com/zed-industries/zed/pull/41710     |
+| Dockerfile    | ✅        | https://github.com/zed-extensions/dockerfile/pull/25 |
+| Elixir        | ✅        | https://github.com/zed-extensions/elixir/pull/38     |
+| Erlang        | ✅        | https://github.com/zed-extensions/erlang/pull/6      |
+| Git Commit    | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| Gleam         | ✅        | https://github.com/gleam-lang/zed-gleam/pull/20      |
+| Go            | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| Haskell       | ✅        | https://github.com/zed-extensions/haskell/pull/7     |
+| Hexa          | ⚠️        | https://github.com/hexalang/hexa-zed-bundle/pull/1   |
+| Haxe          | ⚠️        | https://github.com/Frixuu/Zed-Haxe/pull/14           |
+| HTML          | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| Java          | ✅        | N/A                                                  |
+| Javascript    | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| JSONC         | ✅        | https://github.com/zed-industries/zed/pull/41710     |
+| Kotlin        | ✅        | https://github.com/zed-extensions/kotlin/pull/51     |
+| LaTeX         | ✅        | N/A                                                  |
+| Lua           | ✅        | https://github.com/zed-extensions/lua/pull/37        |
+| Make          | ✅        | https://github.com/caius/zed-make/pull/27            |
+| Nim           | ✅        | https://github.com/foxoman/zed-nim/pull/33           |
+| Nix           | ✅        | https://github.com/zed-extensions/nix/pull/42        |
+| OpenTofu/HCL  | ✅        | N/A                                                  |
+| PHP           | ✅        | https://github.com/zed-extensions/php/pull/66        |
+| Python        | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| R             | ✅        | N/A                                                  |
+| RBS           | ✅        | https://github.com/zed-industries/zed/pull/15778     |
+| Ruby          | ✅        | https://github.com/zed-extensions/ruby/pull/203      |
+| Rust          | ✅        | https://github.com/zed-industries/zed/pull/39714     |
+| Scala         | ✅        | N/A                                                  |
+| Scheme        | ✅        | https://github.com/zed-extensions/scheme/pull/5      |
+| SQL           | ✅        | https://github.com/zed-extensions/sql/pull/38        |
+| Svelte        | ✅        | https://github.com/zed-extensions/svelte/pull/52     |
+| Swift         | ✅        | https://github.com/zed-extensions/swift/pull/43      |
+| Terraform/HCL | ✅        | https://github.com/zed-extensions/terraform/pull/7   |
+| TOML          | ✅        | https://github.com/zed-extensions/toml/pull/2        |
+| TSX           | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| TypeScript    | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| Typst         | ✅        | https://github.com/zed-extensions/typst/pull/54      |
+| YAML          | ✅        | https://github.com/zed-industries/zed/pull/39884     |
+| Zig           | ✅        | N/A                                                  |
 
 ## Theme Overrides
 
@@ -206,32 +209,32 @@ Below is a complete example you can add to your Zed settings and modify to fit y
     "YourThemeName": {
       "syntax": {
         "constant.comment.todo": {
-          "color": "#4078f2ff"
+          "color": "#4078f2ff",
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
         },
         "string.comment.info": {
-          "color": "#50a14fff"
+          "color": "#50a14fff",
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
         },
         "keyword.comment.warn": {
-          "color": "#c18401ff"
+          "color": "#c18401ff",
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
         },
         "property.comment.error": {
-          "color": "#ca1243ff"
+          "color": "#ca1243ff",
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 }
 ```
 
@@ -251,14 +254,14 @@ The text after the `:` can also be customized by adding a `.text` after the corr
     "YourThemeName": {
       "syntax": {
         "property.comment.error.text": {
-          "color": "#ff0000"
+          "color": "#ff0000",
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 }
 ```
 
@@ -270,26 +273,26 @@ Similarly, the prefix (the `//`, `#` or `*` that starts a comment line), parenth
     "YourThemeName": {
       "syntax": {
         "property.comment.error.prefix": {
-          "color": "#ff0000"
+          "color": "#ff0000",
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
         },
         "property.comment.error.bracket": {
-          "color": "#000000dd"
+          "color": "#000000dd",
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
         },
         "property.comment.error.user": {
-          "color": "#000000dd"
+          "color": "#000000dd",
           // "background_color": "#00000000",
           // "font_weight": "bold",
           // "font_style": "italic"
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 }
 ```
 
