@@ -169,6 +169,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Java          | ✅        | N/A                                                  |
 | Javascript    | ✅        | https://github.com/zed-industries/zed/pull/39884     |
 | JSONC         | ✅        | https://github.com/zed-industries/zed/pull/41710     |
+| JSON5         | ✅        | https://github.com/ChunzhengLab/json5-zed-extension/pull/1 |
 | Kotlin        | ✅        | https://github.com/zed-extensions/kotlin/pull/51     |
 | LaTeX         | ✅        | N/A                                                  |
 | Lua           | ✅        | https://github.com/zed-extensions/lua/pull/37        |
