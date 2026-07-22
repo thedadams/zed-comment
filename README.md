@@ -143,58 +143,58 @@ Navigate to the language's directory and locate or create an `injections.scm` fi
 
 The table below lists each language’s comment injection status: ✅ supported; ⚠️ not yet supported (PR submitted).
 
-| Language      | Supported | Pull request                                         |
-| ------------- | --------- | ---------------------------------------------------- |
-| AsciiDoc      | ✅        | https://github.com/dunyakirkali/zed-asciidoc/pull/10 |
-| Astro         | ✅        | https://github.com/zed-extensions/astro/pull/41      |
-| Bash          | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| C             | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| Clojure       | ✅        | https://github.com/zed-extensions/clojure/pull/13    |
-| C#            | ✅        | N/A                                                  |
-| C++           | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| CSS           | ✅        | https://github.com/zed-industries/zed/pull/41710     |
-| D             | ✅        | N/A                                                  |
-| Dart          | ✅        | https://github.com/zed-extensions/dart/pull/35       |
-| Diff          | ✅        | https://github.com/zed-industries/zed/pull/41710     |
-| Dockerfile    | ✅        | https://github.com/zed-extensions/dockerfile/pull/25 |
-| Elixir        | ✅        | https://github.com/zed-extensions/elixir/pull/38     |
-| Erlang        | ✅        | https://github.com/zed-extensions/erlang/pull/6      |
-| Git Commit    | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| Gleam         | ✅        | https://github.com/gleam-lang/zed-gleam/pull/20      |
-| Go            | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| Haskell       | ✅        | https://github.com/zed-extensions/haskell/pull/7     |
-| Hexa          | ⚠️        | https://github.com/hexalang/hexa-zed-bundle/pull/1   |
-| Haxe          | ✅        | https://github.com/Frixuu/Zed-Haxe/pull/14           |
-| HTML          | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| Java          | ✅        | N/A                                                  |
-| Javascript    | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| JSONC         | ✅        | https://github.com/zed-industries/zed/pull/41710     |
+| Language      | Supported | Pull request                                               |
+| ------------- | --------- | ---------------------------------------------------------- |
+| AsciiDoc      | ✅        | https://github.com/dunyakirkali/zed-asciidoc/pull/10       |
+| Astro         | ✅        | https://github.com/zed-extensions/astro/pull/41            |
+| Bash          | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| C             | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| Clojure       | ✅        | https://github.com/zed-extensions/clojure/pull/13          |
+| C#            | ✅        | N/A                                                        |
+| C++           | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| CSS           | ✅        | https://github.com/zed-industries/zed/pull/41710           |
+| D             | ✅        | N/A                                                        |
+| Dart          | ✅        | https://github.com/zed-extensions/dart/pull/35             |
+| Diff          | ✅        | https://github.com/zed-industries/zed/pull/41710           |
+| Dockerfile    | ✅        | https://github.com/zed-extensions/dockerfile/pull/25       |
+| Elixir        | ✅        | https://github.com/zed-extensions/elixir/pull/38           |
+| Erlang        | ✅        | https://github.com/zed-extensions/erlang/pull/6            |
+| Git Commit    | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| Gleam         | ✅        | https://github.com/gleam-lang/zed-gleam/pull/20            |
+| Go            | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| Haskell       | ✅        | https://github.com/zed-extensions/haskell/pull/7           |
+| Hexa          | ⚠️        | https://github.com/hexalang/hexa-zed-bundle/pull/1         |
+| Haxe          | ✅        | https://github.com/Frixuu/Zed-Haxe/pull/14                 |
+| HTML          | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| Java          | ✅        | N/A                                                        |
+| Javascript    | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| JSONC         | ✅        | https://github.com/zed-industries/zed/pull/41710           |
 | JSON5         | ✅        | https://github.com/ChunzhengLab/json5-zed-extension/pull/1 |
-| Kotlin        | ✅        | https://github.com/zed-extensions/kotlin/pull/51     |
-| LaTeX         | ✅        | N/A                                                  |
-| Lua           | ✅        | https://github.com/zed-extensions/lua/pull/37        |
-| Make          | ✅        | https://github.com/caius/zed-make/pull/27            |
-| Nim           | ✅        | https://github.com/foxoman/zed-nim/pull/33           |
-| Nix           | ✅        | https://github.com/zed-extensions/nix/pull/42        |
-| OpenTofu/HCL  | ✅        | N/A                                                  |
-| PHP           | ✅        | https://github.com/zed-extensions/php/pull/66        |
-| Python        | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| R             | ✅        | N/A                                                  |
-| RBS           | ✅        | https://github.com/zed-industries/zed/pull/15778     |
-| Ruby          | ✅        | https://github.com/zed-extensions/ruby/pull/203      |
-| Rust          | ✅        | https://github.com/zed-industries/zed/pull/39714     |
-| Scala         | ✅        | N/A                                                  |
-| Scheme        | ✅        | https://github.com/zed-extensions/scheme/pull/5      |
-| SQL           | ✅        | https://github.com/zed-extensions/sql/pull/38        |
-| Svelte        | ✅        | https://github.com/zed-extensions/svelte/pull/52     |
-| Swift         | ✅        | https://github.com/zed-extensions/swift/pull/43      |
-| Terraform/HCL | ✅        | https://github.com/zed-extensions/terraform/pull/7   |
-| TOML          | ✅        | https://github.com/zed-extensions/toml/pull/2        |
-| TSX           | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| TypeScript    | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| Typst         | ✅        | https://github.com/zed-extensions/typst/pull/54      |
-| YAML          | ✅        | https://github.com/zed-industries/zed/pull/39884     |
-| Zig           | ✅        | N/A                                                  |
+| Kotlin        | ✅        | https://github.com/zed-extensions/kotlin/pull/51           |
+| LaTeX         | ✅        | N/A                                                        |
+| Lua           | ✅        | https://github.com/zed-extensions/lua/pull/37              |
+| Make          | ✅        | https://github.com/caius/zed-make/pull/27                  |
+| Nim           | ✅        | https://github.com/foxoman/zed-nim/pull/33                 |
+| Nix           | ✅        | https://github.com/zed-extensions/nix/pull/42              |
+| OpenTofu/HCL  | ✅        | N/A                                                        |
+| PHP           | ✅        | https://github.com/zed-extensions/php/pull/66              |
+| Python        | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| R             | ✅        | N/A                                                        |
+| RBS           | ✅        | https://github.com/zed-industries/zed/pull/15778           |
+| Ruby          | ✅        | https://github.com/zed-extensions/ruby/pull/203            |
+| Rust          | ✅        | https://github.com/zed-industries/zed/pull/39714           |
+| Scala         | ✅        | N/A                                                        |
+| Scheme        | ✅        | https://github.com/zed-extensions/scheme/pull/5            |
+| SQL           | ✅        | https://github.com/zed-extensions/sql/pull/38              |
+| Svelte        | ✅        | https://github.com/zed-extensions/svelte/pull/52           |
+| Swift         | ✅        | https://github.com/zed-extensions/swift/pull/43            |
+| Terraform/HCL | ✅        | https://github.com/zed-extensions/terraform/pull/7         |
+| TOML          | ✅        | https://github.com/zed-extensions/toml/pull/2              |
+| TSX           | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| TypeScript    | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| Typst         | ✅        | https://github.com/zed-extensions/typst/pull/54            |
+| YAML          | ✅        | https://github.com/zed-industries/zed/pull/39884           |
+| Zig           | ✅        | N/A                                                        |
 
 ## Theme Overrides
 
