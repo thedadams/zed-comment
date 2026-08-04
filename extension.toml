@@ -7,5 +7,5 @@ description = "Comment language extension for highlighting special comments"
 repository = "https://github.com/thedadams/zed-comment"
 
 [grammars.comment]
-repository = "https://github.com/thedadams/tree-sitter-comment"
-rev = "3c25c172802fbb23c27580d77b1328c268beec43"
+repository = "file:///Users/thedadams/code/tree-sitter-comment"
+rev = "1e1f350fc24f1efa121c346adde7ec1a616745f8"
