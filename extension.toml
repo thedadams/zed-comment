@@ -1,11 +1,11 @@
 id = "comment"
 name = "Comments Highlighter"
-version = "0.6.6"
+version = "0.6.7"
 schema_version = 1
 authors = ["Donnie Adams <donnie@thedadams.com>"]
 description = "Comment language extension for highlighting special comments"
 repository = "https://github.com/thedadams/zed-comment"
 
 [grammars.comment]
-repository = "file:///Users/thedadams/code/tree-sitter-comment"
-rev = "1e1f350fc24f1efa121c346adde7ec1a616745f8"
+repository = "https://github.com/thedadams/tree-sitter-comment"
+rev = "66272d2b6c73fb61157541b69dd0a7ce7b42a5ad"
