@@ -178,6 +178,7 @@ The table below lists each language’s comment injection status: ✅ supported;
 | Nix           | ✅        | https://github.com/zed-extensions/nix/pull/42              |
 | OpenTofu/HCL  | ✅        | N/A                                                        |
 | PHP           | ✅        | https://github.com/zed-extensions/php/pull/66              |
+| Prisma        | ⚠️        | https://github.com/zed-extensions/prisma/pull/51           |
 | Python        | ✅        | https://github.com/zed-industries/zed/pull/39884           |
 | R             | ✅        | N/A                                                        |
 | RBS           | ✅        | https://github.com/zed-industries/zed/pull/15778           |
